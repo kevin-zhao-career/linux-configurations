@@ -1,4 +1,5 @@
+#Root is UUID obtained from sudo blkid device
 menuentry 'Windows 11' {
-    search --fs-uuid --no-floppy --set=root 3C26-6A4C
+    search --fs-uuid --no-floppy --set=root 5259-DEDD
     chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
 }
