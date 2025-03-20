@@ -12,6 +12,7 @@ sudo vim /etc/default/grub
 
 sudo blkid /dev/nvme0n1p1 # Windows EFI Device
 
+sudo cp /etc/grub.d/40_custom /etc/grub.d/09_windows
 sudo chmod o+w /etc/grub.d/09_windows
 sudo vim /etc/grub.d/09_windows
 sudo chmod o-w /etc/grub.d/09_windows
