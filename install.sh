@@ -8,9 +8,11 @@ sudo add-apt-repository universe
 sudo apt-get install vim
 
 sudo fdisk -l
+sudo vim /etc/default/grub
+
 sudo blkid /dev/nvme0n1p1 # Windows EFI Device
 
 sudo chmod o+w /etc/grub.d/09_windows
-sudo vim /etc/default/grub
+sudo vim /etc/grub.d/09_windows
 sudo chmod o-w /etc/grub.d/09_windows
 sudo update-grub
