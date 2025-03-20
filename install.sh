@@ -17,4 +17,4 @@ sudo chmod o+w /etc/grub.d/09_windows
 sudo vim /etc/grub.d/09_windows
 sudo chmod o-w /etc/grub.d/09_windows
 sudo update-grub
-sudo /boot/grub/grub.cfg 
+sudo cat /boot/grub/grub.cfg 
