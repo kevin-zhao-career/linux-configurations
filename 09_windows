@@ -1,0 +1,4 @@
+menuentry 'Windows 11' {
+    search --fs-uuid --no-floppy --set=root 3C26-6A4C
+    chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+}
